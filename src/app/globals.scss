@@ -1,0 +1,13 @@
+
+@use "../scss/base" as *;
+@use "../scss/products" as *;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
