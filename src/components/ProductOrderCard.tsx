@@ -119,11 +119,34 @@ export default function ProductOrderCard({ product }: Props) {
               <span className="text-[16px] font-[500] text-red-500 line-through me-2">{product.crossprice} Tk</span>
               {product.price} Tk
             </div>
-            <ul className="text-sky-100 text-[15px] leading-[24px]">
+            <ul className="text-sky-100 text-[15px] leading-[24px] pb-3">
               <span className="text-[18px] font-[600]">Descriptions:</span>
-              {product.description.map((item, i) => (
-                <li key={i} className="mb-3">{item}</li>
-              ))}
+              {product.description.map((item, i) => {
+                // Case 1: **Label:** Value
+                const labelMatch = item.match(/^\*\*(.+?):\*\*\s?(.*)$/);
+
+                // Case 2: **Entire line bold**
+                const fullBoldMatch = item.match(/^\*\*(.+)\*\*$/);
+
+                return (
+                  <li key={i} className="flex w-full text-sky-100 mb-[7px]">
+                    {labelMatch ? (
+                      <>
+                        <strong className="font-semibold me-2">
+                          {labelMatch[1]}:
+                        </strong>{" "}
+                        <span>{labelMatch[2]}</span>
+                      </>
+                    ) : fullBoldMatch ? (
+                      <strong className="font-semibold mt-5 mb-1">
+                        {fullBoldMatch[1]}
+                      </strong>
+                    ) : (
+                      item
+                    )}
+                  </li>
+                );
+              })}
             </ul>
             <Link
               href="#orderForm"

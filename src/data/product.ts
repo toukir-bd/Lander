@@ -18,39 +18,42 @@ export const products: Product[] = [
     price: 1400,
     image: "/products/spray.jpg",
     description: [
-      "Take a left turn and embark on a fragrant journey into uncharted territory, where flowers, fruits, spices ands woods colour the path of your adventure in a strong, memorable way. Whatever your dreams and fantasies are, experience the exquisite aromas the Detour Noir offers and take a break from the usual and discover adventure down the road less taken.",
-      "Fragrance Notes :",
-      "Top note: Almond, Jasmine, Cypress",
-      "Middle note: Amber, Cedarwood, Heliotrop",
-      "Base note: Vanilla, Musk, Sandalwood"
+      "আমাদের এই কম্বোতে যে ৪ টি আতর থাকছে, সেগুলির বিবরণ আলাদা করে দেওয়া হলো;",
+      "**🌸Ehsas Al Arabiya – Suratti (Made in Saudi Arabia)**",
+      "একটি সফট সুইট আরবিয়ান ফ্লোরাল আতর। হালকা মিষ্টতা, নরম ফুলের ঘ্রাণ ও ক্লিন ফিনিশ—যা একদম এলিগ্যান্ট ও আরামদায়ক অনুভূতি দেয়। ডেইলি ইউজ, পারিবারিক অনুষ্ঠান ও সব বয়সের জন্য উপযোগী।",
+      "**Scent Type:** Soft Sweet • Floral • Elegant",
+      "**Suitable For:** Unisex | Daily & Daytime Use",
+
+      "**🧴Musk Rijali – Euro Valley (Made in India)**",
+      "একটি পরিষ্কার, ন্যাচারাল ও মাস্কি আতর। নরম, শান্ত ও পবিত্র অনুভূতি দেয়—ডেইলি ইউজ ও নামাজের পর ব্যবহারের জন্য আদর্শ।",
+      "**Scent Type:** Clean • Musky • Pure",
+      "**Suitable For:** Unisex | Daily & Prayer Use",
+
+      "**🌊Cool Water – Al Haramain (Made in Dubai)**",
+      "একটি ফ্রেশ, কুল ও অ্যাকোয়াটিক আতর। সমুদ্রের হাওয়া ও ক্লিন অ্যারোমেটিক নোটের অনুভূতি—ডেইলি ইউজ ও গরম আবহাওয়ার জন্য আদর্শ।",
+      "**Scent Type:** Fresh • Aquatic • Cool",
+      "**Suitable For:** Men | Daily, Summer, Winter (Day time)",
+
+      "**🩸Vampier Blood – Euro Valley (Summary)**",
+      "একটি ডার্ক, সুইট ও রহস্যময় আতর। গাঢ় ফলের মিষ্টতা ও মাস্কি বেস—নাইট ইউজ ও স্পেশাল মোমেন্টের জন্য উপযোগী।",
+      "**Scent Type:** Dark · Sweet · Musky",
+      "**Suitable For:** Unisex | Night & Special Use"
     ],
   },
-  // {
-  //   id: 2,
-  //   slug: "haramain-amber-attar",
-  //   name: "Haramain Amber, Attar 15 ML",
-  //   price: 650,
-  //   image: "/products/amber.jpg",
-  //   description: [
-  //     "Find yourself! Silent sophistication is the name of the game. Authentically pleasant and effortlessly charming, that is what Haramain Amber is. There will be leaders and there will be heroes. While you know you can’t grab the most important role all the time, no one can stop you from being the scene-stealer, nevertheless. Coupled with this beautiful fragrance, even your minimalist but sincere exploits will have audiences everywhere rooting for you.",
-  //     "Fragrance Notes:",
-  //     "Top note: Spices, Saffron, Geranium, Lemon, Lavender, Clove",
-  //     "Middle note: Artimesia, Cedar wood, Sandalwood, Rose, Orris",
-  //     "Base note: Sandalwood, Guaiac wood, Amber, Animalic, Patchouli, Amyris, Labdanum, Musk"
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   slug: "musk-al-haramain-attar",
-  //   name: "Musk Al Haramain 12 ML Attar",
-  //   price: 1250,
-  //   image: "/products/musk.jpg",
-  //   description: [
-  //     "Musk Al Haramain is a concentrated perfume oil from the house of Al Haramain which will awaken your inner passions and desires. Musk Al Haramain is a delicate blend of elegance that will make you savour every drop. The concentrated oil is a beautiful blend of aroma which will awaken your emotions deep within you. Indulge yourself with the finer things in life with this sensuous Arabian concentrated perfume oil.",
-  //     "Fragrance Notes",
-  //     "Top Note: Bergamot, Orange, Lime, Lavender, Aldehyde, Rose, Geranium",
-  //     "Middle Note: Rose, Rosewood, Carnation, Cinnamon, Gaiac wood, Lily of the Valley, Geranium",
-  //     "Base Note: Cedar wood, Patchouli, Amber, Musk, Sandalwood, Rose, Balsamic"
-  //   ],
-  // },
+  {
+    id: 1,
+    slug: "leather-product",
+    name: "Leather Product",
+    crossprice: 1500,
+    price: 1250,
+    image: "/products/leather.jpg",
+    description: [
+      "**আমাদের লেদার প্রোডাক্টসমূহ তৈরি করা হয়েছে ১০০% খাঁটি গরুর চামড়া দিয়ে। প্রাকৃতিক টেক্সচার, নিখুঁত সেলাই ও পরিমিত নকশার সমন্বয়ে প্রতিটি পণ্যই দেয় আভিজাত্য ও দীর্ঘস্থায়িত্ব। সময় যত যাবে, লেদারের সৌন্দর্য তত আরও গভীর ও ব্যক্তিগত হয়ে উঠবে।**",
+      "প্রিমিয়াম মান",
+      "দীর্ঘস্থায়ী ব্যবহার",
+      "দৈনন্দিন ও ফরমাল ব্যবহারে উপযোগী",
+      "হাতে যত্নসহকারে ফিনিশ করা",
+      "স্টাইল ও মানের নিখুঁত সমন্বয়।"
+    ],
+  },
 ];
