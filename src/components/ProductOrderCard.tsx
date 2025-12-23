@@ -193,7 +193,7 @@ export default function ProductOrderCard({ product }: Props) {
           <div className=" bg-sky-900 p-3 sm:p-6">
             <h2 className="text-sky-300 text-[24px] font-semibold mb-4">Billing Details</h2>
             <div className="w-full">
-              <label className="inputLabel">Your Name</label>
+              <label className="inputLabel">Your Name <span className="text-red-500">*</span></label>
               <input
                 name="name"
                 value={formData.name}
@@ -201,7 +201,7 @@ export default function ProductOrderCard({ product }: Props) {
                 placeholder="Your Name"
                 className="inputPlaceholder mb-5"
               />
-              <label className="inputLabel">Your Phone</label>
+              <label className="inputLabel">Your Phone <span className="text-red-500">*</span></label>
               <input
                 name="phone"
                 value={formData.phone}
@@ -209,7 +209,7 @@ export default function ProductOrderCard({ product }: Props) {
                 placeholder="Phone Number"
                 className="inputPlaceholder mb-5"
               />
-              <label className="inputLabel">Your Address</label>
+              <label className="inputLabel">Your Address <span className="text-red-500">*</span></label>
               <textarea
                 name="address"
                 value={formData.address}

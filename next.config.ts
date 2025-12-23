@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactCompiler: true,
   output: "export",
+  trailingSlash: true,        // 👈 THIS is the key
   images: {
     unoptimized: true,
   },
