@@ -5,7 +5,7 @@ export interface Product {
   name: string;
   crossprice: number;
   price: number;
-  image: string;
+  image: string[];
   description: string[];
 }
 
@@ -16,7 +16,7 @@ export const products: Product[] = [
     name: "4 pcs Combo Pack - Attar",
     crossprice: 2000,
     price: 1400,
-    image: "/products/spray.jpg",
+    image: ["/products/spray.jpg", "/products/spray.jpg", "/products/spray.jpg"],
     description: [
       "আমাদের এই কম্বোতে যে ৪ টি আতর থাকছে, সেগুলির বিবরণ আলাদা করে দেওয়া হলো;",
       "**🌸Ehsas Al Arabiya – Suratti (Made in Saudi Arabia)**",
@@ -46,7 +46,7 @@ export const products: Product[] = [
     name: "Leather Product",
     crossprice: 1500,
     price: 1250,
-    image: "/products/leather.jpg",
+    image: ["/products/leather.jpg", "/products/leather.jpg", "/products/leather.jpg"],
     description: [
       "**আমাদের লেদার প্রোডাক্টসমূহ তৈরি করা হয়েছে ১০০% খাঁটি গরুর চামড়া দিয়ে। প্রাকৃতিক টেক্সচার, নিখুঁত সেলাই ও পরিমিত নকশার সমন্বয়ে প্রতিটি পণ্যই দেয় আভিজাত্য ও দীর্ঘস্থায়িত্ব। সময় যত যাবে, লেদারের সৌন্দর্য তত আরও গভীর ও ব্যক্তিগত হয়ে উঠবে।**",
       "প্রিমিয়াম মান",

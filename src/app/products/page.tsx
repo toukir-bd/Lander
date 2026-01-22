@@ -17,7 +17,7 @@ export default function ProductsPage() {
             >
                 <div className="flex items-center justify-center relative aspect-[420/380] w-[200px]">
                   <Image
-                    src={product.image}
+                    src={product.image[0]}
                     alt={product.name}
                     fill
                     priority

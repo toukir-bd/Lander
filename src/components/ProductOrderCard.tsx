@@ -5,6 +5,7 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { Product } from "../data/product";
 import ThankYou from "./ThankYou";
+import ProductImageSlider from "./ProductImageSlider";
 
 interface Props {
   product: Product;
@@ -105,13 +106,14 @@ export default function ProductOrderCard({ product }: Props) {
         {/* Product Info */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-sky-900 rounded-[15px] p-3">
           <div className="flex items-center justify-center relative aspect-[420/380] w-full bg-white rounded-[10px] overflow-hidden">
-            <Image 
+            {/* <Image 
               src={product.image} 
               alt={product.name} 
               fill
               priority
               className="object-cover"
-            />
+            /> */}
+            <ProductImageSlider images={product.image} />
           </div>
           <div className="flex flex-col space-y-2">
             <h1 className="text-[18px] sm:text-[24px] font-[500] text-sky-300">{product.name}</h1>
@@ -165,7 +167,7 @@ export default function ProductOrderCard({ product }: Props) {
             <div className="w-full flex items-start gap-4">
               <div className="w-16 h-16 relative bg-white rounded flex items-center justify-center text-gray-400">
                 <Image
-                  src={product.image}
+                  src={product.image[0]}
                   alt={product.name}
                   className="object-cover rounded w-[200px] h-[200px]"
                   priority={true} // optional for important images
@@ -232,7 +234,7 @@ export default function ProductOrderCard({ product }: Props) {
 
             <div className="flex items-start gap-3 py-4 border-b border-dashed border-slate-400">
               <div className="w-10 h-10 relative bg-emerald-200 rounded">
-                <Image src={product.image} alt={product.name} fill className="object-cover rounded" />
+                <Image src={product.image[0]} alt={product.name} fill className="object-cover rounded" />
               </div>
               <div className="flex-1">
                 <p className="text-[14px] font-[500] text-slate-500">Free Delivery-Original</p>
