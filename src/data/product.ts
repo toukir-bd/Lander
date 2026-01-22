@@ -42,7 +42,7 @@ export const products: Product[] = [
   },
   {
     id: 1,
-    slug: "100-genuin-leather-combo-giftset",
+    slug: "genuin-leather-combo-giftset",
     name: "100% Genuin Leather Combo Gift Set",
     crossprice: 1500,
     price: 1250,
