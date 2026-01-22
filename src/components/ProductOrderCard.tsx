@@ -106,13 +106,6 @@ export default function ProductOrderCard({ product }: Props) {
         {/* Product Info */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-sky-900 rounded-[15px] p-3">
           <div className="flex items-center justify-center relative aspect-[420/380] w-full bg-white rounded-[10px] overflow-hidden">
-            {/* <Image 
-              src={product.image} 
-              alt={product.name} 
-              fill
-              priority
-              className="object-cover"
-            /> */}
             <ProductImageSlider images={product.image} />
           </div>
           <div className="flex flex-col space-y-2">
@@ -124,10 +117,7 @@ export default function ProductOrderCard({ product }: Props) {
             <ul className="text-sky-100 text-[15px] leading-[24px] pb-3">
               <span className="text-[18px] font-[600]">Descriptions:</span>
               {product.description.map((item, i) => {
-                // Case 1: **Label:** Value
                 const labelMatch = item.match(/^\*\*(.+?):\*\*\s?(.*)$/);
-
-                // Case 2: **Entire line bold**
                 const fullBoldMatch = item.match(/^\*\*(.+)\*\*$/);
 
                 return (
@@ -170,7 +160,7 @@ export default function ProductOrderCard({ product }: Props) {
                   src={product.image[0]}
                   alt={product.name}
                   className="object-cover rounded w-[200px] h-[200px]"
-                  priority={true} // optional for important images
+                  priority={true}
                   fill
                 />
               </div>
@@ -191,6 +181,7 @@ export default function ProductOrderCard({ product }: Props) {
               <div className="text-[18px] font-[600] text-[#0D2843]">{totalPrice} Tk</div>
             </div>
           </div>
+          
           {/* Billing */}
           <div className=" bg-sky-900 p-3 sm:p-6">
             <h2 className="text-sky-300 text-[24px] font-semibold mb-4">Billing Details</h2>
@@ -230,10 +221,10 @@ export default function ProductOrderCard({ product }: Props) {
 
           {/* ORDER PANEL — FULLY RESTORED */}
           <div className="flex flex-col space-y-5">
-            <h2 className="text-emerald-900  text-[24px] font-semibold mb-4">Your order</h2>
+            <h2 className="text-teal-700  text-[24px] font-semibold mb-4">Your order</h2>
 
             <div className="flex items-start gap-3 py-4 border-b border-dashed border-slate-400">
-              <div className="w-10 h-10 relative bg-emerald-200 rounded">
+              <div className="w-10 h-10 relative bg-slate-200 rounded border border-slate-300">
                 <Image src={product.image[0]} alt={product.name} fill className="object-cover rounded" />
               </div>
               <div className="flex-1">

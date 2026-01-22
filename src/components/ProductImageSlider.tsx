@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -18,13 +18,17 @@ export default function ProductImageSlider({ images }: Props) {
 
   return (
     <>
-      {/* Slider */}
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
         spaceBetween={10}
         className="w-full h-full rounded-[10px]"
+        autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        }}
       >
         {images.map((img, i) => (
           <SwiperSlide key={i}>
@@ -52,7 +56,7 @@ export default function ProductImageSlider({ images }: Props) {
               className="object-contain"
             />
           </div>
-          <button className="absolute top-5 right-5 text-white text-3xl" onClick={() => setActiveImage(null)}>
+          <button className="absolute top-5 right-5 text-2xl font-[500] w-[46px] h-[46px] bg-red-600 text-white rounded-full" onClick={() => setActiveImage(null)}>
             ✕
           </button>
         </div>

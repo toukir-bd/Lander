@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
+import LogoDark from "../../public/logodark.png";
 
 export default function HomePage() {
   return (
@@ -16,7 +17,14 @@ export default function HomePage() {
             alt="logo"
             priority
             fill
-            className="object-cover"
+            className="object-cover dark:hidden"
+          />
+          <Image
+            src={LogoDark}
+            alt="logo"
+            priority
+            fill
+            className="object-cover hidden dark:block"
           />
         </div>
         <p className="text-gray-600 mb-8 text-center text-[20px] font-medium tracking-[.35px] w-full">

@@ -16,9 +16,22 @@
     @apply h-[100px];
   }
   &:disabled{
-    @apply text-sky-700 bg-white border-none font-[700];
+    @apply text-teal-700 bg-white border-none font-[700];
   }
 }
 .inputLabel{
   @apply text-[14px] font-[500] text-blue-100;
+}
+
+.swiper {
+  .swiper-pagination-bullet {
+    @apply w-[16px] h-[16px] bg-slate-500 hover:bg-slate-600;
+  }
+  .swiper-pagination-bullet-active {
+    @apply w-[16px] h-[16px] bg-teal-800;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    @apply text-teal-700;
+  }
 }
