@@ -48,7 +48,7 @@ export default function ProductImageSlider({ images }: Props) {
       {/* Fullscreen Modal */}
       {activeImage && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center" onClick={() => setActiveImage(null)}>
-          <div className="relative w-full h-full max-w-5xl max-h-[90vh]">
+          <div className="relative w-full h-full max-w-auto max-h-full">
             <Image
               src={activeImage}
               alt="Full view"

@@ -44,11 +44,16 @@ export const products: Product[] = [
     id: 1,
     slug: "genuin-leather-combo-giftset",
     name: "100% Genuin Leather Combo Gift Set",
-    crossprice: 1500,
-    price: 1250,
-    image: ["/products/leather.jpg", "/products/leather.jpg", "/products/leather.jpg"],
+    crossprice: 1790,
+    price: 1490,
+    image: [
+      "/products/leather/i.jpg", 
+      "/products/leather/ii.jpg", 
+      "/products/leather/iii.jpg",
+      "/products/leather/iv.jpg"
+    ],
     description: [
-      "**আমাদের লেদার প্রোডাক্টসমূহ তৈরি করা হয়েছে ১০০% জেনুইন চামড়া দিয়ে। প্রাকৃতিক টেক্সচার, নিখুঁত সেলাই ও পরিমিত নকশার সমন্বয়ে প্রতিটি পণ্যই দেয় আভিজাত্য ও দীর্ঘস্থায়িত্ব। সময় যত যাবে, লেদারের সৌন্দর্য তত আরও গভীর ও ব্যক্তিগত হয়ে উঠবে।**",
+      "**আমাদের প্রোডাক্টসমূহ তৈরি করা হয়েছে ১০০% জেনুইন লেদার দিয়ে। প্রাকৃতিক টেক্সচার, নিখুঁত সেলাই ও পরিমিত নকশার সমন্বয়ে প্রতিটি পণ্যই দেয় আভিজাত্য ও দীর্ঘস্থায়িত্ব। সময় যত যাবে, লেদারের সৌন্দর্য তত আরও গভীর ও ব্যক্তিগত হয়ে উঠবে।**",
       "প্রিমিয়াম মান",
       "দীর্ঘস্থায়ী ব্যবহার",
       "দৈনন্দিন ও ফরমাল ব্যবহারে উপযোগী",
