@@ -13,9 +13,9 @@ export default function ProductsPage() {
             <Link
               key={product.slug}
               href={`/products/${product.slug}`}
-              className="group rounded-lg shadow p-4 flex flex-col items-center hover:shadow-xl transition bg-white"
+              className="group rounded-lg shadow p-3 flex flex-col items-center hover:shadow-xl transition bg-white"
             >
-                <div className="flex items-center justify-center relative aspect-[420/380] w-[200px]">
+                <div className="flex items-center justify-center relative aspect-[420/380] w-full mb-4">
                   <Image
                     src={product.image[0]}
                     alt={product.name}
@@ -25,7 +25,7 @@ export default function ProductsPage() {
                   />
                 </div>
               <h2 className="text-[17px] text-slate-600 font-[500] group-hover:text-blue-700">{product.name}</h2>
-              <p className="text-[#0D2843] mt-2 font-bold text-xl">
+              <p className="text-[#0D2843] mt-1 font-bold text-xl">
                 <span className="text-[16px] font-[500] text-red-500 line-through me-2">{product.crossprice} Tk</span>
                 {product.price} Tk
               </p>
